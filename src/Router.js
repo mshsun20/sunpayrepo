@@ -13,15 +13,17 @@ const Router = () => {
     return (
         <>
         <Navbar />
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/services" component={Services} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/registration" component={Registration} />
-            <Route path="/login" component={Login} />
-            <Redirect path="/" component={Home} />
-        </Switch>
+        <div className="apbdy">
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/services" component={Services} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/registration" component={Registration} />
+                <Route path="/login" component={Login} />
+                <Redirect to="/" />
+            </Switch>
+        </div>
         <Footer />
         </>
     )

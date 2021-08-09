@@ -1,0 +1,54 @@
+@import 'partials/myvars';
+@import 'partials/mymxns';
+
+
+.footr {
+    background-color: darken($color: $shcl15, $amount: 25%);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: lighten($color: $shcl15, $amount: 60%);
+
+    .link-secondary {
+        color: lighten($color: $shcl15, $amount: 25%);
+        font-style: italic;
+        text-decoration: none;
+        &:hover {
+            color: lighten($color: $shcl15, $amount: 45%);
+            font-style: normal;
+        }
+    }
+
+    .fotrsocm {
+        width: 100%;
+        height: auto;
+        @include cmmnflx;
+        flex-direction: column;
+        gap: 20px;
+        .ftrshdr{
+            width: auto;
+            height: auto;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .ftrscnt {
+            width: auto;
+            height: auto;
+            min-width: 260px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 50px));
+            gap: 20px;
+            .nvsclnk {
+                width: 60%;
+                height: auto;
+            }
+        }
+    }
+
+    hr {
+        height: 0.1em;
+        color: lighten($color: $shcl15, $amount: 15%);
+    }
+    .febl {
+        color: lighten($color: $shcl15, $amount: 5%);
+    }
+}

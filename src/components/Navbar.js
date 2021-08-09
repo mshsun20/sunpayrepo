@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
+// import MenuIcon from '@material-ui/icons/Menu'
 
 const Navbar = () => {
     // const [menuState, setmenuState] = useState(false)
@@ -11,14 +11,16 @@ const Navbar = () => {
         <div className="navcntnr">
             <div className="navbr">
                 <div className="navhd">
-                    <div><span>sun</span>pay</div>
+                    <div><span>s</span>un<span>p</span>ay</div>
                 </div>
                 <div className="nvmnugrp">
                     <div className="navmnu">
-                        <NavLink className="nvlnk" to='/'><Button className="nvbtn">Home</Button></NavLink>
-                        <NavLink className="nvlnk" to='/services'><Button className="nvbtn">Services</Button></NavLink>
-                        <NavLink className="nvlnk" to='/about'><Button className="nvbtn">AboutUS</Button></NavLink>
-                        <NavLink className="nvlnk" to='/contact'><Button className="nvbtn">ContactUS</Button></NavLink>
+                        <NavLink className="nvlnk" to='/'><span className="nvspn">Home</span></NavLink>
+                        <NavLink className="nvlnk" to='/services'><span className="nvspn">Services</span></NavLink>
+                        <NavLink className="nvlnk" to='/about'><span className="nvspn">AboutUS</span></NavLink>
+                        <NavLink className="nvlnk" to='/contact'><span className="nvspn">ContactUS</span></NavLink>
+                        <NavLink className="nvlnk" to='/registration'><Button className="nvbtnrg">Sign Up</Button></NavLink>
+                        <NavLink className="nvlnk" to='/login'><Button className="nvbtnlg">Log In</Button></NavLink>
                     </div>
                     {/* <div className="hmbrgmnu"><MenuIcon className="hmbrgicn" onClick={() => setmenuState(!menuState)} /></div> */}
                 </div>
