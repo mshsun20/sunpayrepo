@@ -5,33 +5,148 @@
 .hmpg {
     width: 100%;
     height: auto;
-    min-height: 1200px;
+    min-height: 1000px;
     @include cmmnflx;
     flex-direction: column;
 
     .hmhdr {
-        background-color: lighten($color: $shcl15, $amount: 50%);
+        background-color: lighten($color: $shcl15, $amount: 45%);
         width: 100%;
         height: auto;
-        min-height: 650px;
+        min-height: 500px;
         @include cmmnflx;
         
         .hmhdrcnt {
             width: 80%;
             height: 80%;
-            min-height: 520px;
+            min-height: 400px;
             @include cmmnflx;
             .hmcptn {
-                background-color: lighten($color: $shcl15, $amount: 20%);
                 width: 50%;
                 height: 100%;
-                min-height: 520px;
+                min-height: 400px;
+                @include cmmnflx;
+                .hmcptgrp {
+                    width: 80%;
+                    height: 80%;
+                    min-height: 320px;
+                    display: grid;
+                    grid-template-columns: repeat(1, 100%);
+                    grid-template-rows: repeat(3, 33.3%);
+                    row-gap: 4%;
+                    .hmcpthdr {
+                        width: 100%;
+                        height: auto;
+                        max-height: 104px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        span {
+                            color: darken($color: $shcl15, $amount: 15%);
+                            font-size: 2vw;
+                            font-weight: bold;
+                            text-align: left;
+                            text-transform: capitalize;
+                            word-wrap: break-word;
+                        }
+                    }
+                    .hmcptdet {
+                        width: 100%;
+                        height: auto;
+                        max-height: 104px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        span {
+                            color: darken($color: $shcl15, $amount: 50%);
+                            font-size: 1vw;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                    }
+                    .hmcptsubsc {
+                        width: 100%;
+                        height: auto;
+                        max-height: 104px;
+                        display: grid;
+                        grid-template-rows: 40% 50% 10%;
+                        span {
+                            width: 75%;
+                            color: darken($color: $shcl15, $amount: 30%);
+                            font-size: 1.25vw;
+                            font-weight: 500;
+                            text-align: left;
+                            text-transform: capitalize;
+                            word-wrap: break-word;
+                        }
+                        div {
+                            background-color: lighten($color: $shcl15, $amount: 100%);
+                            width: 75%;
+                            height: 100%;
+                            padding: 0.5%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-radius: 50px;
+                            box-shadow: 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%);
+                            .hmcpttxt {
+                                width: 65%;
+                                height: 80%;
+                                margin-left: 3%;
+                                border: none;
+                                outline: none;
+                                border-radius: 50px;
+                            }
+                            .hmcptbtn {
+                                background-color: lighten($color: $shcl15, $amount: 10%);
+                                color: lighten($color: $shcl15, $amount: 50%);
+                                width: 30%;
+                                height: 100%;
+                                border: none;
+                                outline: none;
+                                border-radius: 50px;
+                                font-size: 1vw;
+                                text-transform: capitalize;
+                                &:hover {
+                                    background-color: darken($color: $shcl15, $amount: 5%);
+                                    color: lighten($color: $shcl15, $amount: 80%);
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .hmphts {
-                background-color: lighten($color: $shcl15, $amount: 30%);
                 width: 50%;
                 height: 100%;
                 min-height: 520px;
+                @include cmmnflx;
+                .hmphtgrp {
+                    width: 80%;
+                    height: 80%;
+                    min-height: 416px;
+                    display: grid;
+                    grid-template-columns: repeat(10, 10%);
+                    grid-template-rows: repeat(10, 10%);
+                    .pht1 {
+                        width: 100%;
+                        height: 100%;
+                        grid-column: 5/-1;
+                        grid-row: 1/5;
+                        object-fit: cover;
+                        border-radius: 20px;
+                        z-index: 2;
+                    }
+                    .pht2 {
+                        width: 100%;
+                        height: 100%;
+                        grid-column: 1/7;
+                        grid-row: 2/-1;
+                        object-fit: cover;
+                        border-radius: 20px;
+                        z-index: 1;
+                    }
+                }
             }
         }
     }
@@ -39,12 +154,12 @@
     .hmbdy {
         width: 100%;
         height: auto;
-        min-height: 550px;
+        min-height: 500px;
 
         .hmbdybck {
             position: absolute;
-            background-color: lighten($color: $shcl15, $amount: 50%);
-            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 63%);
+            background-color: lighten($color: $shcl15, $amount: 45%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 35%);
             width: 100%;
             height: auto;
             min-height: 550px;
@@ -52,14 +167,65 @@
         }
 
         .hmbdycnt {
-            background-color: lighten($color: $shcl15, $amount: 60%);
+            background-color: lighten($color: $shcl15, $amount: 55%);
             width: 80%;
-            height: 80%;
+            height: auto;
             min-height: 440px;
-            margin: 10% 10%;
-            @include cmmnflx;
+            margin: 5% 10%;
+            padding: 2%;
+            // padding: 2% 2% 10% 2%;
+            @include cmmngrd;
+            flex-direction: column;
             border-radius: 5px;
-            box-shadow: 0.5px 0.5px 10px 0.5px lighten($color: $shcl15, $amount: 45%), 0.5px 0.5px 10px 0.5px lighten($color: $shcl15, $amount: 45%), 0.5px 0.5px 10px 0.5px lighten($color: $shcl15, $amount: 45%), 0.5px 0.5px 10px 0.5px lighten($color: $shcl15, $amount: 45%);
+            box-shadow: 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%), 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%), 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%), 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%);
+            .hmbdyhd {
+                span {
+                    color: darken($color: $shcl15, $amount: 15%);
+                    font-size: 2vw;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+            }
+            .hmbdydet {
+                // background-color: lighten($color: $shcl15, $amount: 35%);
+                display: grid;
+                gap: 0%;
+                .hmbdycrd {
+                    height: 80%;
+                    padding: 1%;
+                    .hmdtaicn {
+                        color: lighten($color: $shcl15, $amount: 15%);
+                        width: 3vw;
+                        height: 3vw;
+                    }
+                    .hmdtadtls {
+                        color: darken($color: $shcl15, $amount: 50%);
+                        span {
+                            font-size: 1.25vw;
+                            word-wrap: break-word;
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+
+
+@media (min-width: 1080px) {
+    .hmbdydet {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+}
+
+@media (max-width: 1080px) {
+    .hmbdydet {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 800px) {
+    .hmbdydet {
+        grid-template-columns: repeat(1, 100%);
     }
 }
