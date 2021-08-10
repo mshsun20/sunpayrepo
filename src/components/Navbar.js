@@ -16,8 +16,8 @@ const Navbar = () => {
                 <div className="nvmnugrp">
                     <div className="navmnu">
                         <NavLink className="nvlnk" to='/'><span className="nvspn">Home</span></NavLink>
-                        <NavLink className="nvlnk" to='/services'><span className="nvspn">Services</span></NavLink>
                         <NavLink className="nvlnk" to='/about'><span className="nvspn">AboutUS</span></NavLink>
+                        <NavLink className="nvlnk" to='/services'><span className="nvspn">Services</span></NavLink>
                         <NavLink className="nvlnk" to='/contact'><span className="nvspn">ContactUS</span></NavLink>
                         <NavLink className="nvlnk" to='/registration'><Button className="nvbtnrg">Sign Up</Button></NavLink>
                         <NavLink className="nvlnk" to='/login'><Button className="nvbtnlg">Log In</Button></NavLink>

@@ -155,6 +155,8 @@
         width: 100%;
         height: auto;
         min-height: 500px;
+        @include cmmnflx;
+        z-index: -1;
 
         .hmbdybck {
             position: absolute;
@@ -163,21 +165,20 @@
             width: 100%;
             height: auto;
             min-height: 550px;
-            z-index: -1;
+            z-index: 1;
         }
 
         .hmbdycnt {
+            position: absolute;
             background-color: lighten($color: $shcl15, $amount: 55%);
             width: 80%;
             height: auto;
             min-height: 440px;
-            margin: 5% 10%;
             padding: 2%;
-            // padding: 2% 2% 10% 2%;
             @include cmmngrd;
-            flex-direction: column;
             border-radius: 5px;
             box-shadow: 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%), 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%), 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%), 0.25px 0.25px 8px 0px lighten($color: $shcl15, $amount: 40%);
+            z-index: 2;
             .hmbdyhd {
                 span {
                     color: darken($color: $shcl15, $amount: 15%);
@@ -189,21 +190,26 @@
             .hmbdydet {
                 // background-color: lighten($color: $shcl15, $amount: 35%);
                 display: grid;
-                gap: 0%;
                 .hmbdycrd {
-                    height: 80%;
-                    padding: 1%;
+                    height: auto;
+                    padding: 5%;
+                    @include cmmngrd;
+                    grid-template-rows: 20% 10% 60%;
+                    gap: 5%;
                     .hmdtaicn {
-                        color: lighten($color: $shcl15, $amount: 15%);
                         width: 3vw;
                         height: 3vw;
                     }
+                    .hmdtahdng {
+                        color: darken($color: $shcl15, $amount: 15%);
+                        font-size: 1.25vw;
+                        font-weight: 500;
+                        word-wrap: break-word;
+                    }
                     .hmdtadtls {
                         color: darken($color: $shcl15, $amount: 50%);
-                        span {
-                            font-size: 1.25vw;
-                            word-wrap: break-word;
-                        }
+                        font-size: 1.25vw;
+                        word-wrap: break-word;
                     }
                 }
             }
