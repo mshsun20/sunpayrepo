@@ -6,7 +6,10 @@ const Aboutsectiontop = () => {
         <>
         <div>
             <div className="abttppht"></div>
-            <div className="abttpinf"></div>
+            <div className="abttpinf">
+                <div className="abttphd"></div>
+                <div className="abttpbdy"></div>
+            </div>
         </div>
         </>
     )
