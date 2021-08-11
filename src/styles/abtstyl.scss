@@ -1,0 +1,11 @@
+@import 'partials/myvars';
+@import 'partials/mymxns';
+
+
+.abtpg {
+    background-color: lighten($color: $shcl15, $amount: 45%);
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+    @include cmmngrd;
+}

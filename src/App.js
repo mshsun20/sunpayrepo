@@ -4,6 +4,7 @@ import './styles/apbdystyl.scss'
 import './styles/navstyl.scss'
 import './styles/fotrstyl.scss'
 import './styles/hmstyl.scss'
+import './styles/abtstyl.scss'
 import Router from './Router'
 
 const App = () => {

@@ -1,9 +1,14 @@
 import React from 'react'
+import Aboutsectiontop from './aboutpartials/Aboutsectiontop'
+import Aboutsectionbottom from './aboutpartials/Aboutsectionbottom'
 
 const About = () => {
     return (
         <>
-        <div>abpage</div>
+        <div className="abtpg">
+            <Aboutsectiontop />
+            <Aboutsectionbottom />
+        </div>
         </>
     )
 }

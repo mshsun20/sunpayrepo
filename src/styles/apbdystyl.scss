@@ -7,3 +7,10 @@
     width: 100%;
     min-height: 275px;
 }
+
+
+@media (max-width: 800px) {
+    .apbdy {
+        padding-top: 75px;
+    }
+}

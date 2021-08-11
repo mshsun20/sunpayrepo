@@ -7,8 +7,8 @@ const Homephotos = () => {
         <>
         <div className="hmphts">
             <div className="hmphtgrp">
-                <img className="pht1" src={spay1} alt="s-pay 01" />
                 <img className="pht2" src={spay2} alt="s-pay 02" />
+                <img className="pht1" src={spay1} alt="s-pay 01" />
             </div>
         </div>
         </>
