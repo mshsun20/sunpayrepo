@@ -1,9 +1,12 @@
 import React from 'react'
+import Servicebody from './servicespartials/Servicebody'
 
 const Services = () => {
     return (
         <>
-        <div>servicespage</div>
+        <div>
+            <Servicebody />
+        </div>
         </>
     )
 }
