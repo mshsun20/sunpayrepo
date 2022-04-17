@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { Button } from '@material-ui/core'
 import menu from '../icons/darkmode/menu.png'
 
-const Navbar = (props) => {
+const Navbar = () => {
     const [menuState, setmenuState] = useState(false)
 
     // close hamberger menu when click anywhere outside the menu window
